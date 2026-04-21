@@ -29,13 +29,23 @@ function displayTasks(){
             'list-group-item',
             'd-flex',
             'justify-content-between',
-            'align-items-center'
+            'align-items-center',
         )
          //set innerHTML of the LI with a task and remove button
-         li.innerHTML = `${task} <button class="btn btn-success btn-sm" onclick="removeTask(${index})">✓</button>`;
+         li.innerHTML = `${task} <button class="btn btn-primary btn-sm" onclick="removeTask(${index})">✓</button>`;
          //append the new task list to the HTML
             taskList.appendChild(li);
     })
 
-    
 }
+
+function removeTask(index){
+    tasks.splice(index,1);
+    displayTasks();
+}
+
+
+document.getElementById('clearTaskBtn').addEventListener('click', function () {
+    tasks = []
+    displayTasks()
+})

@@ -1,0 +1,17 @@
+body {
+    background-color: #c4fff9;
+    color: #68d8d6;
+    filter: drop-shadow(2px 2px 1px #127475);
+    font-family: "Margarine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#addTaskBtn {
+    background-color: #9ceaef;
+    color: #127475;
+}
+
+#clearTaskBtn {
+    background-color: #127475;
+    color: #c4fff9;
+}
