@@ -1,11 +1,12 @@
 body {
-    background-color: #c4fff9;
+    background-image: linear-gradient(180deg, #c4fff9 0%, #127475 100%);
     color: #68d8d6;
     filter: drop-shadow(2px 2px 1px #127475);
     font-family: "Margarine", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 #addTaskBtn {
     background-color: #9ceaef;
     color: #127475;
@@ -14,4 +15,14 @@ body {
 #clearTaskBtn {
     background-color: #127475;
     color: #c4fff9;
+}
+footer {
+    background-color: #127475;
+    color:#c4fff9;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px; 
+}
+
+footer h2 {
+    filter: drop-shadow(2px 2px 1px #9ceaef);
 }
