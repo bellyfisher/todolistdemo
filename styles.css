@@ -11,10 +11,19 @@ body {
     background-color: #9ceaef;
     color: #127475;
 }
+#addTaskBtn:hover {
+    background-color: #127475;
+    color: #9ceaef;
+    filter: drop-shadow(2px 2px 1px white);
+}
 
 #clearTaskBtn {
     background-color: #127475;
     color: #c4fff9;
+}
+#clearTaskBtn:hover{
+    background-color: #c4fff9;
+    color: #127475;
 }
 footer {
     color:#c4fff9;

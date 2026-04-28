@@ -22,6 +22,7 @@ function addTask() {
 
         // Update task list display
         displayTasks();
+        updateCounter();
     }
 }
 
@@ -82,10 +83,16 @@ function removeTask(index) {
     launchConfetti();
     tasks.splice(index, 1);
     displayTasks();
+    updateCounter();
 }
 
 // Clear all tasks
 document.getElementById('clearTaskBtn').addEventListener('click', function () {
     tasks = [];
     displayTasks();
+    updateCounter();
 });
+
+function updateCounter() {
+    document.getElementById('taskCounter').textContent = "Tasks to do: " + tasks.length;
+}
